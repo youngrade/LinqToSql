@@ -1,0 +1,12 @@
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\bin\Debug\LinqToSqlProject.exe.config
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\bin\Debug\LinqToSqlProject.exe
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\bin\Debug\LinqToSqlProject.pdb
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.csprojAssemblyReference.cache
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.LINQToSQL.resources
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.Properties.Resources.resources
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.csproj.GenerateResource.cache
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.csproj.CoreCompileInputs.cache
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.exe
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.pdb
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.OnebyOne.resources
+C:\Users\KatarzaGautama\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.InsertForm.resources

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NBAdb" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=KATARZA\MSSQLSERVER_OLAP;Initial Catalog=NBAdb;Integrated Security=True" SettingsObjectName="LinqToSqlProject.Properties.Settings" SettingsPropertyName="NBAdbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Conferences" Member="Conferences">
+    <Type Name="Conference">
+      <Column Name="ConfName" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NoOfTeams" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Conference_Team" Member="Teams" ThisKey="ConfName" OtherKey="ConfName" Type="Team" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Players" Member="Players">
+    <Type Name="Player">
+      <Column Name="PlayerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PFirstName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PLastName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Team_TeamID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Team_Player" Member="Team" ThisKey="Team_TeamID" OtherKey="TeamID" Type="Team" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Teams" Member="Teams">
+    <Type Name="Team">
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamCity" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ConfName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Association Name="Team_Player" Member="Players" ThisKey="TeamID" OtherKey="Team_TeamID" Type="Player" />
+      <Association Name="Conference_Team" Member="Conference" ThisKey="ConfName" OtherKey="ConfName" Type="Conference" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
